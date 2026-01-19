@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>quizz app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Quizz Online by.Ayu</h1>
+        <h4>Selamat Mengerjakan &#9997</h4>
+    <form id="quizForm">
+        <div class="question">
+            <p>1. Apa tag HTML untuk membuat link?</p>
+            <label><input type="radio" name="q1" value="0"> &lt;url&gt;</label>
+            <label><input type="radio" name="q1" value="1"> &lt;a&gt;</label>
+            <label><input type="radio" name="q1" value="0"> &lt;link&gt;</label>
+            <label><input type="radio" name="q1" value="0"> &lt;href&gt;</label>
+        </div>
+
+        <div class="question">
+            <p>2. Apa properti CSS untuk mengubah warna teks?</p>
+            <label><input type="radio" name="q2" value="0"> text-color</label>
+            <label><input type="radio" name="q2" value="1"> color</label>
+            <label><input type="radio" name="q2" value="0"> text-style</label>
+            <label><input type="radio" name="q2" value="0"> font-color</label>
+        </div>
+
+        <div class="question">
+            <p>3. Bagaimana cara menulis komentar satu baris di JavaScript?</p>
+            <label><input type="radio" name="q3" value="1"> // komentar</label>
+            <label><input type="radio" name="q3" value="0"> # komentar</label>
+            <label><input type="radio" name="q3" value="0">  /* komentar */</label>
+            <label><input type="radio" name="q3" value="0">!--komentar--</label>
+        </div>
+
+        <div class="question">
+            <p>4. Tag untuk membuat paragraf adalah?</p>
+            <label><input type="radio" name="q4" value="1"> &lt;p&gt;</label>
+            <label><input type="radio" name="q4" value="0"> &lt;div&gt;</label>
+            <label><input type="radio" name="q4" value="0"> &lt;span&gt;</label>
+            <label><input type="radio" name="q4" value="0"> &lt;br&gt;</label>
+        </div>
+
+        <div class="question">
+            <p>5. Apa properti CSS untuk mengubah ukuran font?</p>
+            <label><input type="radio" name="q5" value="0"> font-style</label>
+            <label><input type="radio" name="q5" value="0"> size</label>
+            <label><input type="radio" name="q5" value="1"> font-size</label>
+            <label><input type="radio" name="q5" value="0"> text-size</label>
+        </div>
+
+        <button type="button" onclick="hitungSkor()">Submit</button>
+    </form>
+
+    <div class="result" id="result">
+        <h3>Hasil Quizz</h3>
+        <p id="scoreText"></p>
+        <p id="statusText"></p>
+        <button onclick="ulangKuis()">Ulangi Kuis</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
